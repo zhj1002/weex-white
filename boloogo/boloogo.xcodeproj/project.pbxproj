@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661512C4F7B5AF37355FEB3C /* libPods-boloogo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7A8C4DA2FEC269EDDA359C /* libPods-boloogo.a */; };
+		DD0B036B1E7428ED00634813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B036A1E7428ED00634813 /* main.m */; };
+		DD0B036E1E7428ED00634813 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B036D1E7428ED00634813 /* AppDelegate.m */; };
+		DD0B03711E7428ED00634813 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B03701E7428ED00634813 /* ViewController.m */; };
+		DD0B03741E7428ED00634813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B03721E7428ED00634813 /* Main.storyboard */; };
+		DD0B03761E7428ED00634813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B03751E7428ED00634813 /* Assets.xcassets */; };
+		DD0B03791E7428ED00634813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B03771E7428ED00634813 /* LaunchScreen.storyboard */; };
+		DD0B03841E7428ED00634813 /* boloogoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B03831E7428ED00634813 /* boloogoTests.m */; };
+		DD0B038F1E7428ED00634813 /* boloogoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B038E1E7428ED00634813 /* boloogoUITests.m */; };
+		DD0B039F1E7429C400634813 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B039D1E7429C400634813 /* GuideViewController.m */; };
+		DD0B03A31E7429F400634813 /* WXImgLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B03A21E7429F400634813 /* WXImgLoader.m */; };
+		DD0B03A71E742A0500634813 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B03A61E742A0500634813 /* WXEventModule.m */; };
+		DD0B03A91E742AB800634813 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03A81E742AB800634813 /* JavaScriptCore.framework */; };
+		DD0B03AB1E742AD800634813 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03AA1E742AD800634813 /* AVKit.framework */; };
+		DD0B03AD1E742ADF00634813 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03AC1E742ADF00634813 /* AVFoundation.framework */; };
+		DD0B03AF1E742AEE00634813 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03AE1E742AEE00634813 /* MediaPlayer.framework */; };
+		DD0B03B11E742AF700634813 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03B01E742AF700634813 /* CoreMedia.framework */; };
+		DD0B03B31E742AFD00634813 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03B21E742AFD00634813 /* ImageIO.framework */; };
+		DD0B03B51E742B0400634813 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03B41E742B0400634813 /* CoreImage.framework */; };
+		DD0B03B71E742B1000634813 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03B61E742B1000634813 /* GLKit.framework */; };
+		DD0B03B91E742B1800634813 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03B81E742B1800634813 /* libstdc++.6.0.9.tbd */; };
+		DD0B03BB1E742B2100634813 /* WeexSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0B03BA1E742B2100634813 /* WeexSDK.framework */; };
+		DDB68C6D1E8B619E0002B8BF /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C6C1E8B619E0002B8BF /* libBPush.a */; };
+		DDB68C701E8B61AD0002B8BF /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = DDB68C6F1E8B61AD0002B8BF /* test.caf */; };
+		DDB68C721E8B61BE0002B8BF /* BPushCerResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDB68C711E8B61BE0002B8BF /* BPushCerResource.bundle */; };
+		DDB68C741E8B61D70002B8BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C731E8B61D70002B8BF /* Foundation.framework */; };
+		DDB68C761E8B61E20002B8BF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C751E8B61E20002B8BF /* CoreTelephony.framework */; };
+		DDB68C781E8B61F80002B8BF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C771E8B61F80002B8BF /* libz.tbd */; };
+		DDB68C7A1E8B62020002B8BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C791E8B62020002B8BF /* SystemConfiguration.framework */; };
+		DDB68C7C1E8B620D0002B8BF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB68C7B1E8B620D0002B8BF /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD0B03801E7428ED00634813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0B035E1E7428ED00634813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0B03651E7428ED00634813;
+			remoteInfo = boloogo;
+		};
+		DD0B038B1E7428ED00634813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD0B035E1E7428ED00634813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0B03651E7428ED00634813;
+			remoteInfo = boloogo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22C97F90202A6FB6F45D9B1C /* Pods-boloogo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boloogo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boloogo/Pods-boloogo.debug.xcconfig"; sourceTree = "<group>"; };
+		5E7A8C4DA2FEC269EDDA359C /* libPods-boloogo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-boloogo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AE0341F79F59E6E2109014 /* Pods-boloogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boloogo.release.xcconfig"; path = "Pods/Target Support Files/Pods-boloogo/Pods-boloogo.release.xcconfig"; sourceTree = "<group>"; };
+		DD0B03661E7428ED00634813 /* boloogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boloogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0B036A1E7428ED00634813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD0B036C1E7428ED00634813 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD0B036D1E7428ED00634813 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD0B036F1E7428ED00634813 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD0B03701E7428ED00634813 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD0B03731E7428ED00634813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD0B03751E7428ED00634813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD0B03781E7428ED00634813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD0B037A1E7428ED00634813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0B037F1E7428ED00634813 /* boloogoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boloogoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0B03831E7428ED00634813 /* boloogoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boloogoTests.m; sourceTree = "<group>"; };
+		DD0B03851E7428ED00634813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0B038A1E7428ED00634813 /* boloogoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boloogoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0B038E1E7428ED00634813 /* boloogoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boloogoUITests.m; sourceTree = "<group>"; };
+		DD0B03901E7428ED00634813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0B039C1E7429C400634813 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		DD0B039D1E7429C400634813 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		DD0B039E1E7429C400634813 /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
+		DD0B03A11E7429F400634813 /* WXImgLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoader.h; sourceTree = "<group>"; };
+		DD0B03A21E7429F400634813 /* WXImgLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoader.m; sourceTree = "<group>"; };
+		DD0B03A51E742A0500634813 /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
+		DD0B03A61E742A0500634813 /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+		DD0B03A81E742AB800634813 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DD0B03AA1E742AD800634813 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		DD0B03AC1E742ADF00634813 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DD0B03AE1E742AEE00634813 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DD0B03B01E742AF700634813 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DD0B03B21E742AFD00634813 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DD0B03B41E742B0400634813 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		DD0B03B61E742B1000634813 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DD0B03B81E742B1800634813 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		DD0B03BA1E742B2100634813 /* WeexSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WeexSDK.framework; path = Pods/WeexSDK/WeexSDK.framework; sourceTree = "<group>"; };
+		DDB68C6C1E8B619E0002B8BF /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
+		DDB68C6E1E8B61A50002B8BF /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
+		DDB68C6F1E8B61AD0002B8BF /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
+		DDB68C711E8B61BE0002B8BF /* BPushCerResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BPushCerResource.bundle; sourceTree = "<group>"; };
+		DDB68C731E8B61D70002B8BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDB68C751E8B61E20002B8BF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DDB68C771E8B61F80002B8BF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DDB68C791E8B62020002B8BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DDB68C7B1E8B620D0002B8BF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DDB68C7D1E8B62510002B8BF /* boloogo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = boloogo.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0B03631E7428ED00634813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB68C7C1E8B620D0002B8BF /* CoreLocation.framework in Frameworks */,
+				DDB68C7A1E8B62020002B8BF /* SystemConfiguration.framework in Frameworks */,
+				DDB68C781E8B61F80002B8BF /* libz.tbd in Frameworks */,
+				DDB68C761E8B61E20002B8BF /* CoreTelephony.framework in Frameworks */,
+				DDB68C741E8B61D70002B8BF /* Foundation.framework in Frameworks */,
+				DD0B03BB1E742B2100634813 /* WeexSDK.framework in Frameworks */,
+				DD0B03B91E742B1800634813 /* libstdc++.6.0.9.tbd in Frameworks */,
+				DD0B03B71E742B1000634813 /* GLKit.framework in Frameworks */,
+				DD0B03B51E742B0400634813 /* CoreImage.framework in Frameworks */,
+				DD0B03B31E742AFD00634813 /* ImageIO.framework in Frameworks */,
+				DD0B03B11E742AF700634813 /* CoreMedia.framework in Frameworks */,
+				DD0B03AF1E742AEE00634813 /* MediaPlayer.framework in Frameworks */,
+				DD0B03AD1E742ADF00634813 /* AVFoundation.framework in Frameworks */,
+				DD0B03AB1E742AD800634813 /* AVKit.framework in Frameworks */,
+				DD0B03A91E742AB800634813 /* JavaScriptCore.framework in Frameworks */,
+				DDB68C6D1E8B619E0002B8BF /* libBPush.a in Frameworks */,
+				661512C4F7B5AF37355FEB3C /* libPods-boloogo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B037C1E7428ED00634813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B03871E7428ED00634813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6063E58587D704B9762772E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB68C7B1E8B620D0002B8BF /* CoreLocation.framework */,
+				DDB68C791E8B62020002B8BF /* SystemConfiguration.framework */,
+				DDB68C771E8B61F80002B8BF /* libz.tbd */,
+				DDB68C751E8B61E20002B8BF /* CoreTelephony.framework */,
+				DDB68C731E8B61D70002B8BF /* Foundation.framework */,
+				DD0B03BA1E742B2100634813 /* WeexSDK.framework */,
+				DD0B03B81E742B1800634813 /* libstdc++.6.0.9.tbd */,
+				DD0B03B61E742B1000634813 /* GLKit.framework */,
+				DD0B03B41E742B0400634813 /* CoreImage.framework */,
+				DD0B03B21E742AFD00634813 /* ImageIO.framework */,
+				DD0B03B01E742AF700634813 /* CoreMedia.framework */,
+				DD0B03AE1E742AEE00634813 /* MediaPlayer.framework */,
+				DD0B03AC1E742ADF00634813 /* AVFoundation.framework */,
+				DD0B03AA1E742AD800634813 /* AVKit.framework */,
+				DD0B03A81E742AB800634813 /* JavaScriptCore.framework */,
+				5E7A8C4DA2FEC269EDDA359C /* libPods-boloogo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97BB966C00F456C017DCC389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22C97F90202A6FB6F45D9B1C /* Pods-boloogo.debug.xcconfig */,
+				A4AE0341F79F59E6E2109014 /* Pods-boloogo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD0B035D1E7428ED00634813 = {
+			isa = PBXGroup;
+			children = (
+				DDB68C6B1E8B61830002B8BF /* BPush */,
+				DD0B03681E7428ED00634813 /* boloogo */,
+				DD0B03821E7428ED00634813 /* boloogoTests */,
+				DD0B038D1E7428ED00634813 /* boloogoUITests */,
+				DD0B03671E7428ED00634813 /* Products */,
+				97BB966C00F456C017DCC389 /* Pods */,
+				6063E58587D704B9762772E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD0B03671E7428ED00634813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B03661E7428ED00634813 /* boloogo.app */,
+				DD0B037F1E7428ED00634813 /* boloogoTests.xctest */,
+				DD0B038A1E7428ED00634813 /* boloogoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD0B03681E7428ED00634813 /* boloogo */ = {
+			isa = PBXGroup;
+			children = (
+				DDB68C7D1E8B62510002B8BF /* boloogo.entitlements */,
+				DD0B03A41E7429F800634813 /* module */,
+				DD0B03A01E7429E100634813 /* protocol */,
+				DD0B039C1E7429C400634813 /* GuideViewController.h */,
+				DD0B039D1E7429C400634813 /* GuideViewController.m */,
+				DD0B039E1E7429C400634813 /* AppDefine.h */,
+				DD0B036C1E7428ED00634813 /* AppDelegate.h */,
+				DD0B036D1E7428ED00634813 /* AppDelegate.m */,
+				DD0B036F1E7428ED00634813 /* ViewController.h */,
+				DD0B03701E7428ED00634813 /* ViewController.m */,
+				DD0B03721E7428ED00634813 /* Main.storyboard */,
+				DD0B03751E7428ED00634813 /* Assets.xcassets */,
+				DD0B03771E7428ED00634813 /* LaunchScreen.storyboard */,
+				DD0B037A1E7428ED00634813 /* Info.plist */,
+				DD0B03691E7428ED00634813 /* Supporting Files */,
+			);
+			path = boloogo;
+			sourceTree = "<group>";
+		};
+		DD0B03691E7428ED00634813 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B036A1E7428ED00634813 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD0B03821E7428ED00634813 /* boloogoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B03831E7428ED00634813 /* boloogoTests.m */,
+				DD0B03851E7428ED00634813 /* Info.plist */,
+			);
+			path = boloogoTests;
+			sourceTree = "<group>";
+		};
+		DD0B038D1E7428ED00634813 /* boloogoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B038E1E7428ED00634813 /* boloogoUITests.m */,
+				DD0B03901E7428ED00634813 /* Info.plist */,
+			);
+			path = boloogoUITests;
+			sourceTree = "<group>";
+		};
+		DD0B03A01E7429E100634813 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B03A11E7429F400634813 /* WXImgLoader.h */,
+				DD0B03A21E7429F400634813 /* WXImgLoader.m */,
+			);
+			name = protocol;
+			sourceTree = "<group>";
+		};
+		DD0B03A41E7429F800634813 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B03A51E742A0500634813 /* WXEventModule.h */,
+				DD0B03A61E742A0500634813 /* WXEventModule.m */,
+			);
+			name = module;
+			sourceTree = "<group>";
+		};
+		DDB68C6B1E8B61830002B8BF /* BPush */ = {
+			isa = PBXGroup;
+			children = (
+				DDB68C711E8B61BE0002B8BF /* BPushCerResource.bundle */,
+				DDB68C6F1E8B61AD0002B8BF /* test.caf */,
+				DDB68C6E1E8B61A50002B8BF /* BPush.h */,
+				DDB68C6C1E8B619E0002B8BF /* libBPush.a */,
+			);
+			name = BPush;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD0B03651E7428ED00634813 /* boloogo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0B03931E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogo" */;
+			buildPhases = (
+				7A73A2092665FE30018EED2F /* [CP] Check Pods Manifest.lock */,
+				DD0B03621E7428ED00634813 /* Sources */,
+				DD0B03631E7428ED00634813 /* Frameworks */,
+				DD0B03641E7428ED00634813 /* Resources */,
+				495797830B1FF848BFF07735 /* [CP] Embed Pods Frameworks */,
+				AF96A46233542C568655E104 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boloogo;
+			productName = boloogo;
+			productReference = DD0B03661E7428ED00634813 /* boloogo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD0B037E1E7428ED00634813 /* boloogoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0B03961E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogoTests" */;
+			buildPhases = (
+				DD0B037B1E7428ED00634813 /* Sources */,
+				DD0B037C1E7428ED00634813 /* Frameworks */,
+				DD0B037D1E7428ED00634813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0B03811E7428ED00634813 /* PBXTargetDependency */,
+			);
+			name = boloogoTests;
+			productName = boloogoTests;
+			productReference = DD0B037F1E7428ED00634813 /* boloogoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD0B03891E7428ED00634813 /* boloogoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0B03991E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogoUITests" */;
+			buildPhases = (
+				DD0B03861E7428ED00634813 /* Sources */,
+				DD0B03871E7428ED00634813 /* Frameworks */,
+				DD0B03881E7428ED00634813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD0B038C1E7428ED00634813 /* PBXTargetDependency */,
+			);
+			name = boloogoUITests;
+			productName = boloogoUITests;
+			productReference = DD0B038A1E7428ED00634813 /* boloogoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0B035E1E7428ED00634813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = pabula;
+				TargetAttributes = {
+					DD0B03651E7428ED00634813 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WQ6WWV7GCX;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					DD0B037E1E7428ED00634813 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WQ6WWV7GCX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD0B03651E7428ED00634813;
+					};
+					DD0B03891E7428ED00634813 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WQ6WWV7GCX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD0B03651E7428ED00634813;
+					};
+				};
+			};
+			buildConfigurationList = DD0B03611E7428ED00634813 /* Build configuration list for PBXProject "boloogo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD0B035D1E7428ED00634813;
+			productRefGroup = DD0B03671E7428ED00634813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0B03651E7428ED00634813 /* boloogo */,
+				DD0B037E1E7428ED00634813 /* boloogoTests */,
+				DD0B03891E7428ED00634813 /* boloogoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0B03641E7428ED00634813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB68C701E8B61AD0002B8BF /* test.caf in Resources */,
+				DDB68C721E8B61BE0002B8BF /* BPushCerResource.bundle in Resources */,
+				DD0B03791E7428ED00634813 /* LaunchScreen.storyboard in Resources */,
+				DD0B03761E7428ED00634813 /* Assets.xcassets in Resources */,
+				DD0B03741E7428ED00634813 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B037D1E7428ED00634813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B03881E7428ED00634813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		495797830B1FF848BFF07735 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-boloogo/Pods-boloogo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A73A2092665FE30018EED2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF96A46233542C568655E104 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-boloogo/Pods-boloogo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0B03621E7428ED00634813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0B03711E7428ED00634813 /* ViewController.m in Sources */,
+				DD0B03A31E7429F400634813 /* WXImgLoader.m in Sources */,
+				DD0B039F1E7429C400634813 /* GuideViewController.m in Sources */,
+				DD0B03A71E742A0500634813 /* WXEventModule.m in Sources */,
+				DD0B036E1E7428ED00634813 /* AppDelegate.m in Sources */,
+				DD0B036B1E7428ED00634813 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B037B1E7428ED00634813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0B03841E7428ED00634813 /* boloogoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0B03861E7428ED00634813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0B038F1E7428ED00634813 /* boloogoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD0B03811E7428ED00634813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0B03651E7428ED00634813 /* boloogo */;
+			targetProxy = DD0B03801E7428ED00634813 /* PBXContainerItemProxy */;
+		};
+		DD0B038C1E7428ED00634813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD0B03651E7428ED00634813 /* boloogo */;
+			targetProxy = DD0B038B1E7428ED00634813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD0B03721E7428ED00634813 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0B03731E7428ED00634813 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD0B03771E7428ED00634813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0B03781E7428ED00634813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD0B03911E7428ED00634813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD0B03921E7428ED00634813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD0B03941E7428ED00634813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C97F90202A6FB6F45D9B1C /* Pods-boloogo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = boloogo/boloogo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HeFei Button Netware Technology Co.Ltd. (WQ6WWV7GCX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WeexSDK",
+				);
+				INFOPLIST_FILE = boloogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		DD0B03951E7428ED00634813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AE0341F79F59E6E2109014 /* Pods-boloogo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = boloogo/boloogo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: HeFei Button Netware Technology Co.Ltd. (WQ6WWV7GCX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WeexSDK",
+				);
+				INFOPLIST_FILE = boloogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		DD0B03971E7428ED00634813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				INFOPLIST_FILE = boloogoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo.boloogoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boloogo.app/boloogo";
+			};
+			name = Debug;
+		};
+		DD0B03981E7428ED00634813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				INFOPLIST_FILE = boloogoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo.boloogoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boloogo.app/boloogo";
+			};
+			name = Release;
+		};
+		DD0B039A1E7428ED00634813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				INFOPLIST_FILE = boloogoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo.boloogoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = boloogo;
+			};
+			name = Debug;
+		};
+		DD0B039B1E7428ED00634813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WQ6WWV7GCX;
+				INFOPLIST_FILE = boloogoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boloogo.boloogoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = boloogo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0B03611E7428ED00634813 /* Build configuration list for PBXProject "boloogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0B03911E7428ED00634813 /* Debug */,
+				DD0B03921E7428ED00634813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0B03931E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0B03941E7428ED00634813 /* Debug */,
+				DD0B03951E7428ED00634813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0B03961E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0B03971E7428ED00634813 /* Debug */,
+				DD0B03981E7428ED00634813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0B03991E7428ED00634813 /* Build configuration list for PBXNativeTarget "boloogoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0B039A1E7428ED00634813 /* Debug */,
+				DD0B039B1E7428ED00634813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD0B035E1E7428ED00634813 /* Project object */;
+}
